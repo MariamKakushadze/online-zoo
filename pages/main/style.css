@@ -10,28 +10,29 @@ body {
   height: 100vh; 
 }
 /* header with hamburger menu*/
-.container{
-  padding: 3px 10px;
-}
 header{
   background:#111115;
+  padding: 3px 10px;
 }
 .logo-txt{
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.2899px;
   line-height: 120%;
   color: #FFFFFF;
   text-align: center;
-  max-width:47px;
   margin:0;
 }
 .logo{
+  display: block;
   text-decoration: none;
   position: relative;
-  z-index: 5;
+  z-index: 6;
+  margin: 0;
+  width:47px;
 }
+
 .bamboo-icon{
   position: absolute;
   left: 4px;
@@ -68,6 +69,7 @@ header{
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     transform: scale(0);
+    z-index: 5;
 }
 .menu {
   position: relative;
@@ -88,7 +90,7 @@ nav li {
 }
 nav li a{
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -117,27 +119,35 @@ nav li a{
   top: 0;
   transform: scale(1);
 }
-
+.menu-el:active, .logo:active{
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
 /*section 1 */
 .panda-bg{
   background: url(../../assets/images/Giant\ Panda.png);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 186.96px;
+  position: relative;
 }
 .orange-circle{
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   width:120px;
   height:120px;
   border-radius:50%;
-  position: relative;
+  position: absolute;
   top:20px;
-  left:62px;
+  right:35px;
   z-index: 1;
 }
 .panda-txt{
   z-index: 2;
-  position: relative;
-  font-family: 'Roboto';
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -146,8 +156,8 @@ nav li a{
   text-transform: uppercase;
   color: #FFFFFF;
   width:130px;
-  left: 85px;
-  top: -80px;
+  right: 5px;
+  top: 40px;
 }
 .yellow{
   color:#FFEE2E;
@@ -158,8 +168,7 @@ nav li a{
   width: 298px;
   height: 54px;
   border-style: none;
-  margin: 0 11px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -167,7 +176,50 @@ nav li a{
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top:-20px;
+  position: absolute;
+  top:205px;
+  left: 0;
+  right:0;
+}
+.round-btn:hover{
+  background: #E47209;
+}
+.round-btn:active{
+  background: #4B9200;
+}
+/*section2*/
+.desktop{
+  display:none;
+}
+.backstage-title{
+  padding-top: 20px;;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333B41;
+}
+.backstage-p{
+  padding-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333B41;
+}
+.backstage-txt-container{
+  padding: 0 10px;
+  margin-top: 80px;
+}
+.backstage{
+  position: relative;;
+}
+.flower-photo{
+  position: absolute;
+  right: 0;
+  top: -46px;
 }
 /*footer*/
 
