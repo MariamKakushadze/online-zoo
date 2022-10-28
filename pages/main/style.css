@@ -180,6 +180,7 @@ nav li a{
   top:205px;
   left: 0;
   right:0;
+  cursor: pointer;
 }
 .round-btn:hover{
   background: #E47209;
@@ -220,6 +221,90 @@ nav li a{
   position: absolute;
   right: 0;
   top: -46px;
+}
+
+/*section 3 cards*/
+.cards-container{
+  margin-top:40px;
+  display: flex;
+  gap:20px;
+  flex-direction: column;
+}
+.card{
+  text-align: center;
+  border: 0.78px solid;
+  border-color:#fa6f32;
+  box-shadow: #fe9013;
+  border-radius: 5px;
+  max-width:287px;
+}
+.card:hover{
+ cursor: pointer;
+ transform: scale(1.05);
+}
+.card-txt-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  padding:10px;
+}
+.card-txt{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.4695px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+  margin:0;
+}
+.card-p{
+  font-weight: 300;
+  font-size: 11.6901px;
+  line-height: 120%;
+  text-transform: none;
+  margin:0;
+}
+.fruit-logo{
+ margin:0;
+}
+.animal-img{
+  border-radius: 5px;
+}
+.animals-btn{
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 25px;
+  width: 298px;
+  height: 54px;
+  border-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor:pointer;
+  margin-top: 20px;
+}
+.animals-btn:hover{
+  background: #E47209;
+}
+.animals-btn:active{
+  background: #4B9200;
+}
+.cards{
+  text-align: center;
+}
+.flowers-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flower-img{
+  margin:0;
 }
 /*footer*/
 
