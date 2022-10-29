@@ -134,6 +134,7 @@ nav li a {
   background: url(../../assets/images/Giant\ Panda.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 186.96px;
   position: relative;
 }
