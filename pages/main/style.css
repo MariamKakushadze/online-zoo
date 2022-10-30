@@ -872,3 +872,316 @@ button:active {
     padding: 0;;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .desktop{
+    display:block;
+  }
+  .container{
+    max-width: 1200px;
+  }
+  header{
+    padding: 14px 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .logo{
+    border: 1.18841px solid #FFFFFF;
+    width:72px;
+    z-index: 1;
+  }
+  .logo-txt{
+    font-size: 19px;
+  }
+  .bamboo-icon{
+    width:15px;
+    height:20px;
+    left:3px;
+    top:20px;
+  }
+  .hamburger{
+    display: none;
+  }
+  .navbar{
+    background:none;
+    top: -35px; left: 14%; right: 0; bottom: 0;
+    transform: scale(1);
+    position:absolute;
+    height:fit-content;
+    transition: none;
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+    gap:48px;
+    position: relative;
+  }
+  .menu-el{
+    color:#ffffff;
+  }
+  .menu li{
+    margin-left:0;
+    margin-right:0;
+  }
+  .about a{
+    color:#FE9013 ;
+  }
+  .menu-el:hover{
+    cursor: pointer;
+    color:#FE9013;
+  }
+  .figma{
+   position: absolute;
+   right:160px;
+  }
+ /*section1*/
+  .panda-bg{
+    height:504px;
+  }
+  .orange-circle{
+    width: 367px;
+    height: 367px;
+    top:-20px;
+    z-index:1;
+    right:130px;
+  }
+  .panda-txt{
+    font-size: 85px;
+    right:300px;
+  }
+  .round-btn{
+    top:410px;
+    right:-450px;
+  }
+  /*section2*/
+  .backstage{
+    margin-top:100px;
+    padding:0 30px;
+  }
+.flower-photo{
+ display: none;
+}
+  .backstage-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .man-photo{
+    width: 455px;
+    height: 408px;
+    margin:0;
+  }
+  .backstage-title{
+    padding: 0;
+    font-size: 46px;
+  }
+  .backstage-txt-container{
+    margin:0;
+  }
+  .how-works{
+    padding-top:40px;
+    font-size: 24px;
+  }
+  /*section3*/
+  .cards-container{
+    margin-top:142px;
+    padding:0 30px;
+  }
+  .prev{
+    top:505px;
+    left:350px;
+  }
+  .next{
+    top:505px;
+    right:350px;
+  }
+  .animals-btn{
+    margin-top:80px;
+  }
+  .cards{
+    padding-bottom: 140px;
+  }
+  .palm-img{
+    left:-200px;
+  }
+  .flower-img{
+    width: 241px;
+    height: 180px;
+  }
+  /*section4*/
+  .feed-section{
+    padding: 30px 30px 50px 30px;
+  }
+  .feed-content{
+    padding:30px 50px 50px 50px;
+  }
+  .feed-cards{
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+  .feed-title{
+    font-size: 48px;
+  }
+  .feed-p{
+    font-size: 22px;
+  }
+  .feed-subtitle{
+    padding-top: 40px;;
+  }
+  .feed-btn{
+    margin-top:70px;
+  }
+  .hide{
+    display:none;
+  }
+ .vector{
+  position: absolute;
+    top: -300px;
+    right: 240px;
+  }
+  .vector2{
+    position: absolute;
+      top: -300px;
+      left: 240px;
+    }
+    /*testimonials*/
+    .testimonial-header{
+      margin-top: 100px;
+    }
+    .feedbacks{
+      display: flex;
+      flex-direction: row;
+    }
+    .feedback-container{
+      width: 293px;
+      height: 391px;
+      padding: 16px;;
+    }
+    .comment{
+      height:309px;
+      width:255px;
+      padding: 0;
+    }
+    .progress-cont{
+      margin-top: 20px;
+      background: #F5F7F6;
+      border-radius: 5px;
+      width:390px;
+    }
+    .progress-bar{
+      background: #FE9013;
+      border-radius: 5px;
+      width: 390px;
+      height: 6px; 
+      animation: grow 10s linear infinite;    
+      transform-origin: left;
+    }
+    @keyframes grow{
+      0%{
+        transform:scaleX(0);
+      }
+    }
+    .feedback-btn{
+      margin-top: 50px;
+      margin-left:30px;;
+    }
+    .testimonials{
+      text-align: left;
+    }
+    .leave{
+      width:260px;
+      height:260px;
+      bottom:-58px;
+      right:-80px;
+    }
+    /*footer*/
+    footer{
+      padding: 40px 30px 30px 30px;
+      overflow: hidden;
+    }
+    .social-icons{
+      padding-top:100px;
+      gap:10px;
+      margin:0;
+      top: 55px;
+      align-items: flex-start;
+    }
+    .social-icons a{
+      margin:0;
+      text-decoration: none;
+    }
+    .social-icons a:hover .s-names{
+      color:#4B9200;
+    }
+   .social-icons a:hover .sc-icon{
+      fill: #4B9200;
+     }
+    .footer-btn{
+      top:110px;
+    }
+    .footer-navbar{
+      left:300px;
+    }
+    .s-names{
+      display: inline;
+      font-family: 'Roboto',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-left:12px;
+      position: relative;
+      top:-7px;
+    }
+    .subscribe{
+      font-family: 'Roboto',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 120%;  
+      color: #FFFFFF;
+    }
+    .mail-container{
+      position: absolute;
+      top:40px;
+      right:100px;
+    }
+    input[type=email]{
+      border-radius: 2px;
+      background:#111115;
+      font-family: 'Roboto',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #BDBDBD;
+      padding: 10px;
+      border-style: none;
+      border:0.7px solid #FE9013;
+    }
+    .mail{
+      margin-top:14px;
+    }
+    .submit{
+      margin-left: 10px;
+      width: 129px;
+      height: 42px;
+      background: #F1F3F2;
+      border: 1px solid #333B41;
+      border-radius: 5px;
+      font-family: 'Roboto',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #000000;
+    }
+    .submit:active{
+      background: unset;
+      background: #F1F3F2;
+      border-color: #4B9200;
+      color:#4B9200;
+    }
+}
