@@ -903,7 +903,7 @@ button:active {
   }
   .navbar{
     background:none;
-    top: -35px; left: 14%; right: 0; bottom: 0;
+    top: -35px; left: 22%; right: 0; bottom: 0;
     transform: scale(1);
     position:absolute;
     height:fit-content;
@@ -931,7 +931,7 @@ button:active {
   }
   .figma{
    position: absolute;
-   right:16%;
+   right:25%;
   }
  /*section1*/
   .panda-bg{
