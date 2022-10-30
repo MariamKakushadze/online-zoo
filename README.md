@@ -1,2 +1,2 @@
 # online-zoo
-https://mariamkakushadze.github.io/pets/
+https://mariamkakushadze.github.io/online-zoo/
