@@ -242,7 +242,8 @@ button{
 }
 .card:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.07);
+  background: #6e6d6d;
 }
 .card-txt-container {
   display: flex;
@@ -1201,7 +1202,7 @@ button:active {
   }
   .navbar{
     background:none;
-    top: -35px; left: 25%; right: 0; bottom: 0;
+    top: -30px; left: 24%; right: 0; bottom: 0;
   }
   .figma{
     right:35%;
@@ -1215,28 +1216,35 @@ button:active {
     width: 465px;
     height: 465px;
     top:12px;
-    right:300px;
+    right:330px;
   }
   .panda-txt{
     font-size: 106.496px;
-    right:500px;
+    right:520px;
     top:90px;
   }
   .round-btn{
-    top:580px;
-    right:-680px;
+    top:550px;
+    right:-670px;
   }
   /*section2*/
   .backstage{
-    padding:140px 0 50px 0;
+    padding:140px 0 10px 0;
     margin-top: 0;
   }
   .man-photo{
     width: 609px;
     height: 403px;
   }
+  .backstage-txt-container{
+    padding-left: 50px;
+  }
   .backstage-title{
-    font-size: 48px;
+    font-size: 46px;
+  }
+  .how-works{
+    padding-top: 60px;;
+    font-size: 24px;
   }
   .flower-photo{
     display:flex;
@@ -1246,7 +1254,7 @@ button:active {
   }
   /*section3*/
   .cards-container{
-    margin-top:130px auto 0 auto;
+    margin-top:0px auto 0 auto;
     padding: 0;
     justify-content: space-between;
     row-gap: 20px;;
@@ -1263,12 +1271,12 @@ button:active {
     height: 366px;
   }
   .prev{
-    top:560px;
-    left:120px;
+    top:545px;
+    left:135px;
   }
   .next{
-    top:560px;
-    right:120px;
+    top:545px;
+    right:135px;
   }
   .cards{
     padding-bottom: 100px;
@@ -1284,16 +1292,33 @@ button:active {
     width: 368px;
     height: 275px;
   }
+  .animals-btn{
+    margin-top: 70px;
+  }
   /*section4*/
   .feed-section{
     padding: 70px 0 100px 0;
   }
   .feed-content{
-    padding: 40px 100px 60px 100px;
+    padding: 40px 82px 60px 100px;
   }
   .feed-cards{
     margin-top: 40px;
     justify-content: space-evenly;
+  }
+  .feed-subtitle{
+    padding-top: 60px;;
+  }
+  .feed-bold-p{
+    padding-top: 50px;
+    font-size: 14px;
+  }
+  .emergency-support-p{
+    font-size: 14.5px;
+    padding-right: 100px;;
+  }
+  .feed-btn{
+    margin-top: 60px;
   }
   .vector{
       right: 300px;
@@ -1339,5 +1364,20 @@ button:active {
         left:400px;
       }
     
+    }
+      @media only screen and (min-width: 1900px) {
+        .container{
+          max-width: 1160px;
+        }
+        .navbar{
+          background:none;
+          top: -30px; left: 30%; right: 0; bottom: 0;
+        }
+        .figma{
+          right:47%;
+        }
+        .mail-container{
+          right:20%
+        }
 }
 
