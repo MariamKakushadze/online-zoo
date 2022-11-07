@@ -307,7 +307,7 @@ button{
 .dollar-sign{
   position: absolute;
   top:10px;
-  right:20px;
+  right:10px;
 }
 .input-num{
   border: 1px solid #929699;
@@ -488,24 +488,82 @@ button:active {
   /*section1*/
   .panda-bg{
     height:339px;
+    background-position: -225px, 10%;
   }
-  .orange-circle{
-    width: 237.6px;
-    height: 237.6px;
-    top:10px;
-    right:80px;
+  /*donation*/
+  .donation{
+    padding: 30px 20px 40px 20px;;
   }
-  .panda-txt{
-    font-size: 54.2894px;
-    line-height: 75%;
-    right:120px;
-    top:50px;
-  }
-  .round-btn{
-    right:300px;
-    top:250px;
-  }
-  
+  .donation-info h2{
+  font-size: 36px;
+  margin-top: 0;
+}
+.donation-card h2{
+  font-size: 48px;
+  padding-bottom: 20px;
+}
+.donation-card span{
+  font-size: 24px;
+}
+.donation-card{
+  padding: 30px 0;
+}
+.panda-icon-container{
+ margin-top:95px;
+}
+.panda-icon{
+  width: 268.49px;
+  height: 198.47px;
+}
+.diet{
+  font-size: 16px;
+}
+.num{
+  font-size: 72px;
+}
+.x{
+  width: 14px;
+  height: 14px;
+}
+.payment{
+  height:27px;
+}
+.amount{
+  padding-left: 10px;;
+}
+.yellow-btn{
+  margin-top:8px;
+  gap:22px;
+}
+.radio-btn{
+  width:10px;
+  height: 10px;
+  padding: 5px;
+}
+.radio-btn:focus, .radio-btn:hover{
+  outline: 1px solid #fe9013;
+  outline-offset: 10px;
+}
+.radio-btn:checked{
+  border:1px solid #fe9013;
+  outline: 1px solid #fe9013;
+  outline-offset: 10px;
+}
+.payment-label{
+  font-size: 26px;
+}
+.another-amount{
+  margin-top: 70px;
+  margin-left: 10px;
+}
+.payment-type{
+  margin-top:40px;
+  max-width:300px;
+}
+.feed-btn{
+  width:298px;
+}
+
   /*footer*/
   footer{
     padding: 20px 20px 0 20px;
