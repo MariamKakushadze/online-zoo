@@ -93,7 +93,7 @@
               </div>
               <div class="another-amount">
                 <img src="../../assets/icons/dollar.png" alt="dollar-sign" class="dollar-sign">
-                <input type="number" maxlength='9'class='input-num' value="" placeholder="Another amount">
+                <input type="number" maxlength='4' oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class='input-num' value="" placeholder="Another amount">
                </div>
               <div class="payment-type">
                 <div class="month">
