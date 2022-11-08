@@ -240,6 +240,143 @@ button{
  width:8px;
  height:8px;
 }
+
+.payment{
+  background: #404950;
+  border-radius: 1px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  height:13.5px;
+  position: relative;
+  z-index: 1;
+}
+.line{
+  background: #72828E;
+  height:2px;
+  width:80%;
+  position: absolute;
+  z-index: 10;
+  top:6px;
+  left:10%;
+}
+.yellow-btn{
+  margin-top:4px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  z-index: 11;
+}
+.radio-btn{
+  background-clip: content-box;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 50%;
+  background: #FFEE2E;
+  width:5px;
+  height: 5px;;
+  padding: 3px;
+}
+.radio-btn:focus, .radio-btn:hover{
+  outline: 1px solid #fe9013;
+  outline-offset: 5px;
+}
+.yellow-btn:hover {
+  color:#FE9013;
+  cursor: pointer;
+}
+.radio-btn:checked{
+  border:1px solid #fe9013;
+  outline: 1px solid #fe9013;
+  outline-offset: 5px;
+}
+.amount{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  text-align: left;
+  padding-top: 4px;;
+  padding-bottom: 8px;
+}
+.payment-label{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333B41;
+}
+.another-amount{
+  margin-top: 40px;
+  position: relative;
+  width:180px; 
+  margin-left: 0;
+}
+.dollar-sign{
+  position: absolute;
+  top:10px;
+  right:10px;
+}
+.input-num{
+  border: 1px solid #929699;
+  border-radius: 2px;
+  padding: 10px;
+  outline-style: none;
+  width:180px;
+  background:transparent;
+}  
+.payment-type{
+  margin-top:30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.month,.once{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+}
+#monthly, #once{
+  appearance: none;
+  background-clip: content-box;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  border: 2px solid #FE9013;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#monthly:checked, #once:checked{
+  background-color: #FE9013;
+}
+
+.feed-btn {
+  width:100%;
+  height: 54px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 30px;
+  padding: 0;
+  border-radius: 25px;
+}
+.share-txt{
+  margin-top: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+  letter-spacing: 0.2px;
+}
+
 /*footer*/
 footer{
 background: #111115;
@@ -363,24 +500,86 @@ button:active {
   /*section1*/
   .panda-bg{
     height:339px;
+    background-position: -225px, 10%;
   }
-  .orange-circle{
-    width: 237.6px;
-    height: 237.6px;
-    top:10px;
-    right:80px;
+  /*donation*/
+  .donation{
+    padding: 30px 20px 40px 20px;;
   }
-  .panda-txt{
-    font-size: 54.2894px;
-    line-height: 75%;
-    right:120px;
-    top:50px;
-  }
-  .round-btn{
-    right:300px;
-    top:250px;
-  }
-  
+  .donation-info h2{
+  font-size: 36px;
+}
+.donation-card h2{
+  font-size: 48px;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+.donation-card span{
+  font-size: 24px;
+}
+.donation-card{
+  padding: 30px 0;
+}
+.panda-icon-container{
+ margin-top:95px;
+}
+.panda-icon{
+  width: 268.49px;
+  height: 198.47px;
+}
+.diet{
+  font-size: 16px;
+}
+.num{
+  font-size: 72px;
+}
+.x{
+  width: 14px;
+  height: 14px;
+}
+.payment{
+  height:27px;
+}
+.line {
+  top: 12px;
+}
+.amount{
+  padding-left: 10px;;
+  margin-top:40px;
+}
+.yellow-btn{
+  margin-top:8px;
+  gap:22px;
+}
+.radio-btn{
+  width:10px;
+  height: 10px;
+  padding: 5px;
+}
+.radio-btn:focus, .radio-btn:hover{
+  outline: 1px solid #fe9013;
+  outline-offset: 10px;
+}
+.radio-btn:checked{
+  border:1px solid #fe9013;
+  outline: 1px solid #fe9013;
+  outline-offset: 10px;
+}
+.payment-label{
+  font-size: 26px;
+}
+.another-amount{
+  margin-top: 70px;
+  margin-left: 10px;
+}
+.payment-type{
+  margin-top:40px;
+  max-width:300px;
+}
+.feed-btn{
+  width:298px;
+}
+
   /*footer*/
   footer{
     padding: 20px 20px 0 20px;
@@ -480,22 +679,74 @@ button:active {
     margin-left:0;
     margin-right:0;
   }
-  .about a{
+  .donate-link a{
     color:#FE9013 ;
   }
   .menu-el:hover{
     cursor: pointer;
     color:#FE9013;
   }
-  .figma{
-   position: absolute;
-   right:25%;
-  }
+ 
  /*section1*/
   .panda-bg{
-    height:504px;
+    height:390px;
+    background-position: -115px, 10%;
+    background-size: 150%;
   }
- 
+ /*donation*/
+ .donation{
+  padding: 40px 30px 30px 30px;;
+}
+.txt-container h2{
+  font-size:36px;
+}
+.txt-container span{
+  letter-spacing:unset;
+}
+
+.donation-info h2 {
+margin-top: 40px;
+padding-bottom: 10px;
+}
+.donation-card h2{
+  margin-top: 0;
+}
+.donation-card{
+  padding: 30px 0 45px 0;
+}
+.panda-icon-container{
+  margin-top:105px;
+  max-width: 550px;
+ }
+ .x{
+  font-size: 30px;;
+ }
+ .payment{
+  max-width: 810px;
+ }
+ .amount{
+  padding-left: 70px;;
+  margin-top:48px;
+}
+.another-amount{
+  margin-top: 100px;
+  margin-left: 25px;;
+  width:268px;
+  height:54px;
+}
+.input-num{ 
+  width:268px;
+  height:54px;
+}
+.dollar-sign{
+  top: 15px;
+}
+.payment-type{
+  margin-top:10px;
+}
+.feed-btn{
+ margin-top: 40px;
+}
     /*footer*/
     footer{
       padding: 40px 30px 30px 30px;
@@ -605,14 +856,35 @@ button:active {
     background:none;
     top: -30px; left: 24%; right: 0; bottom: 0;
   }
-  .figma{
-    right:35%;
-  }
+ 
   /*section1*/
   .panda-bg{
-    height:700px;
-    background-size:auto;
+    height:390px;
+    background-size:cover;
+    background-position:center;
   }
+
+  .donation{
+    padding: 40px 0 180px 0;
+  }
+  .txt-container h2{
+    padding-bottom: 0px;;
+  }
+  .donation-card{
+    margin-top: 60px;
+    padding: 40px 0 60px 0;
+  }
+  .payment{
+    width: 976px;
+    max-width: 976px;
+  }
+  .amount {
+    padding-left: 93px;
+  }
+  .another-amount {
+    margin-left: 93px;
+  }
+
   
       /*footer*/
       .mail-container{
@@ -630,9 +902,6 @@ button:active {
         .navbar{
           background:none;
           top: -30px; left: 30%; right: 0; bottom: 0;
-        }
-        .figma{
-          right:47%;
         }
         .mail-container{
           right:20%

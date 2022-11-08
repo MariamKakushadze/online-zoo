@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="container">
-        <a class="logo" href="index.html" > 
+        <a class="logo" href="../main/index.html" > 
           <h1 class="logo-txt">PetStory <br>online </h1>
           <img class="bamboo-icon" alt="" src="../../assets/icons/bamboo.png">
         </a>
@@ -24,7 +24,7 @@
         <nav class="navbar">
           <ul class="menu">
             <li class="about">
-              <a href="index.html" class="menu-el">About</a>
+              <a href="../main/index.html" class="menu-el">About</a>
             </li>
             <li>
               <a href="#map" class="menu-el">Map</a>
@@ -32,7 +32,7 @@
             <li>
               <a href="#zoos" class="menu-el">Zoos</a>
             </li>
-            <li>
+            <li class="donate-link">
               <a href="../donate/index.html" class="menu-el">Donate</a>
             </li>
             <li>
@@ -46,8 +46,7 @@
       </div>
     </header>
     <section class="panda-bg">
-     <div class="container">
-     </div>
+     <div class="container"></div>
     </section> 
    <section class="donation">
     <div class="container">
@@ -68,9 +67,47 @@
             <p class="x">x</p>
             <img class="panda-icon" src="../../assets/icons/panda_widget1.png" alt="">
           </div>
+            <p class="amount">Amount</p>
+            <div class="payment">
+              <div class="line"></div>
+                    <div class="yellow-btn">
+                        <input class="radio-btn" type="radio" id="500" value="500" name="radio">
+                        <label class="payment-label" for="500">$500</label>
+                    </div>
+                    <div class="yellow-btn">
+                        <input class="radio-btn" type="radio" id="250" value="250" name="radio">
+                        <label class="payment-label" for="250">$250</label>
+                    </div>
+                    <div class="yellow-btn">
+                        <input class="radio-btn" type="radio" id="100" value="100" name="radio" checked>
+                        <label  class="payment-label" for="100">$100</label>
+                    </div>
+                    <div class="yellow-btn">
+                        <input class="radio-btn" type="radio" id="50" value="50" name="radio">
+                        <label class="payment-label" for="50">$50</label>
+                    </div>
+                    <div class="yellow-btn">
+                        <input class="radio-btn" type="radio" id="25" value="25" name="radio">
+                        <label class="payment-label" for="25">$25</label>
+                    </div>
+              </div>
+              <div class="another-amount">
+                <img src="../../assets/icons/dollar.png" alt="dollar-sign" class="dollar-sign">
+                <input type="number" maxlength='4' oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class='input-num' value="" placeholder="Another amount">
+               </div>
+              <div class="payment-type">
+                <div class="month">
+                 <input type="radio" id="monthly" name="type" value="monthly">
+                 <label for="monthly">Monthly</label></div>
+                <div class="once">
+                 <input type="radio" id="once" name="type" value="once">
+                 <label for="once">Once</label></div>
+              </div>
+              <a href="index.html"><button class="feed-btn">Feed a friend now</button></a>
+              <p class="share-txt">Share with your friends on social networks </p>
+           </div>
         </div>
-      </div>
-    </div>
+     </div>
    </section> 
       
     <footer id="footer">
