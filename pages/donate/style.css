@@ -301,6 +301,11 @@ button{
   padding-top: 4px;;
   padding-bottom: 8px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .payment-label{
   font-family: 'Roboto';
   font-style: normal;
